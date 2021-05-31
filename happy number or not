@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;               //19
+   int r,res=0;
+   while(n!=0)
+   {
+   	  r=n%10;           //this brings the last digit from the n-->9
+   	  n=n/10;          //this change the n-->1
+   	  res=res+r*r;     //81+(1*1)=82
+   	  if(n==0)
+   	  {
+   	  	n=res;
+   	  	res=0;
+   	  	if(n>=1&&n<=9)
+   	  	{
+   	  		break;
+        }
+	  }
+    }
+    if(n==1)
+    {
+		  cout<<"happy number";
+    }
+    else
+    {
+   	      cout<<"not happy number";
+    }
+}
