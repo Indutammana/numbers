@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	int r,res=0;
+	while(n)      //reversing logic
+	{
+		r=n%10;
+		n=n/10;
+		res=res*10+r;
+	}
+	cout<<res;
+	return 0;
+}
