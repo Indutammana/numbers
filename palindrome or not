@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,n1;
+	cin>>n;
+	n1=n;
+	int r,res=0;
+	while(n)        //palindrome logic
+	{
+		r=n%10;
+		n=n/10;
+		res=res*10+r;
+	}
+	if(n1==res)
+	{
+		cout<<"given number is palindrom";
+	}
+	else
+	{
+		cout<<"given number is not a palindrom";
+	}
+	return 0;
+}
